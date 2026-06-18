@@ -56,21 +56,18 @@ body {
   margin-top: 30px;
   display: flex;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
-.botones a {
+.boton-principal,
+.boton-secundario {
+  color: #84a3c9;
+  display: inline-block;
   text-decoration: none;
-  background: #38bdf8;
-  color: #0f172a;
-  padding: 12px 22px;
+  padding: 14px 25px;
   border-radius: 8px;
   font-weight: bold;
-}
-
-.botones .boton-secundario {
-  background: transparent;
-  color: #38bdf8;
-  border: 2px solid #38bdf8;
+  position: relative;
 }
 
 .tarjeta-perfil {
@@ -128,7 +125,12 @@ body {
   border: 1px solid #334155;
   font-weight: bold;
 }
-
+/* movimiento del card*/
+.card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-5px);
+  transition: transform 0.4s ease;
+}
 .proyectos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

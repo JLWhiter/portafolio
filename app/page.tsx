@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <main className="contenedor">
       <section className="inicio">
-        <div className="texto-inicio">
+        <div data-aos="fade-right" className="texto-inicio" >
           <p className="saludo">Hola, soy</p>
           <h1>José Luis Chamorro Baldera</h1>
           <h2>Estudiante de Ingeniería de Software</h2>
@@ -12,12 +12,18 @@ export default function Home() {
           </p>
 
           <div className="botones">
-            <a href="#proyectos">Ver proyectos</a>
-            <a href="#contacto" className="boton-secundario">Contacto</a>
+            <a href="#proyectos" className="boton-principal hvr-border-fade hvr-float-shadow" >
+              Ver proyectos
+            </a>
+
+            <a href="#contacto" className="boton-secundario hvr-border-fade hvr-float-shadow">
+              Contacto
+            </a>
           </div>
+
         </div>
 
-        <div className="tarjeta-perfil" data-aos="fade-right">
+        <div data-aos="fade-left" className="tarjeta-perfil" >
           <h3>Sobre mí</h3>
           <p>6to ciclo</p>
           <p>UTP</p>
@@ -25,7 +31,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="seccion" id="sobre-mi">
+      <section data-aos="fade-up" className="seccion" id="sobre-mi" >
         <h2>Sobre mí</h2>
         <p>
           Soy estudiante de Ingeniería de Software. Me interesa aprender nuevas
@@ -34,7 +40,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="seccion">
+      <section data-aos="fade-up" className="seccion">
         <h2>Habilidades</h2>
         <div className="grid">
           <div className="card">HTML</div>
@@ -48,7 +54,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="seccion" id="proyectos">
+      <section data-aos="fade-up" className="seccion" id="proyectos">
         <h2>Proyectos</h2>
         <div className="proyectos">
           <div className="proyecto">
@@ -77,7 +83,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="seccion" id="contacto">
+      <section data-aos="fade-right" className="seccion" id="contacto">
         <h2>Contacto</h2>
         <p>Correo: josebaldera.2021@gmail.com</p>
         <p>Ubicación: Lima, Perú</p>
