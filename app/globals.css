@@ -1,3 +1,4 @@
+@import "tailwindcss";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -71,9 +72,12 @@ body {
 }
 
 .tarjeta-perfil {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  max-width: 90%;
   background: #1e293b;
   border: 1px solid #334155;
-  padding: 30px;
+  padding: 35px;
   border-radius: 18px;
   text-align: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
@@ -125,12 +129,7 @@ body {
   border: 1px solid #334155;
   font-weight: bold;
 }
-/* movimiento del card*/
-.card:hover {
-  border-color: #38bdf8;
-  transform: translateY(-5px);
-  transition: transform 0.4s ease;
-}
+
 .proyectos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

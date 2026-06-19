@@ -1,3 +1,5 @@
+import Footer from "./components/footer";
+
 export default function Home() {
   return (
     <main className="contenedor">
@@ -23,11 +25,11 @@ export default function Home() {
 
         </div>
 
-        <div data-aos="fade-left" className="tarjeta-perfil" >
-          <h3>Sobre mí</h3>
-          <p>6to ciclo</p>
-          <p>UTP</p>
-          <p>Frontend | Backend | BD</p>
+        <div data-aos="fade-left" className="tarjeta-perfil " >
+          <h3 >Sobre mí</h3 >
+          <p className="hvr-border-fade hvr-float-shadow">6to ciclo</p>
+          <p className="hvr-border-fade hvr-float-shadow">UTP</p>
+          <p className="hvr-border-fade hvr-float-shadow">Frontend | Backend | BD</p>
         </div>
       </section>
 
@@ -43,13 +45,12 @@ export default function Home() {
       <section data-aos="fade-up" className="seccion">
         <h2>Habilidades</h2>
         <div className="grid">
-          <div className="card">HTML</div>
-          <div className="card">CSS</div>
-          <div className="card">JavaScript</div>
-          <div className="card">React</div>
-          <div className="card">Next.js</div>
-          <div className="card">Java</div>
-          <div className="card">PostgreSQL</div>
+          <div className="card hvr-border-fade hvr-float-shadow">tailwind</div>
+          <div className="card hvr-border-fade hvr-float-shadow">JavaScript</div>
+          <div className="card hvr-border-fade hvr-float-shadow">React</div>
+          <div className="card hvr-border-fade hvr-float-shadow">Next.js</div>
+          <div className="card hvr-border-fade hvr-float-shadow">Java</div>
+          <div className="card hvr-border-fade hvr-float-shadow">PostgreSQL</div>
           <div className="card">MongoDB</div>
         </div>
       </section>
@@ -83,11 +84,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section data-aos="fade-right" className="seccion" id="contacto">
+      <section data-aos="fade-up" className="seccion" id="contacto">
         <h2>Contacto</h2>
         <p>Correo: josebaldera.2021@gmail.com</p>
         <p>Ubicación: Lima, Perú</p>
       </section>
+
+      <Footer/>
+    
     </main>
   );
 }
