@@ -16,7 +16,7 @@ export default function Footer() {
       href="https://www.linkedin.com/in/jos%C3%A9-luis-chamorro-baldera-048489320/"
       target="_blank"
       rel="noopener noreferrer"
-      className="flex gap-2"
+      className="flex gap-2 hover:text-gray-500 hover:translate-y-[-2px]"
     >
       
       <span>LinkedIn</span>
@@ -28,7 +28,7 @@ export default function Footer() {
       href="https://github.com/JLWhiter"
       target="_blank"
       rel="noopener noreferrer"
-      className=" flex gap-2"
+      className=" flex gap-2 hover:text-gray-500 hover:translate-y-[-2px]"
     >
       <span>GitHub</span>
   

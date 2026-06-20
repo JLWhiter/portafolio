@@ -1,8 +1,7 @@
 @import "tailwindcss";
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  @apply box-border m-0 p-0;
 }
 
 html {
@@ -10,177 +9,118 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #0f172a;
-  color: #e5e7eb;
+  @apply font-sans bg-slate-900 text-gray-200;
 }
 
 .contenedor {
-  width: 90%;
-  max-width: 1100px;
-  margin: auto;
+  @apply w-[90%] max-w-[1100px] m-auto;
 }
 
 .inicio {
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-  gap: 40px;
+  @apply min-h-screen grid grid-cols-[2fr_1fr] items-center gap-10;
 }
 
 .saludo {
-  color: #38bdf8;
-  font-size: 20px;
-  margin-bottom: 10px;
+  @apply text-sky-400 text-[20px] mb-[10px];
 }
 
 .texto-inicio h1 {
-  font-size: 55px;
-  color: white;
-  margin-bottom: 10px;
+  @apply text-[55px] text-white mb-[10px];
 }
 
 .texto-inicio h2 {
-  font-size: 28px;
-  color: #38bdf8;
-  margin-bottom: 20px;
+  @apply text-[28px] text-sky-400 mb-5;
 }
 
 .texto-inicio p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #cbd5e1;
+  @apply text-[18px] leading-[1.6] text-slate-300;
 }
 
 .botones {
-  margin-top: 30px;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+  @apply mt-[30px] flex gap-[15px] flex-wrap;
 }
 
 .boton-principal,
 .boton-secundario {
-  color: #84a3c9;
-  display: inline-block;
-  text-decoration: none;
-  padding: 14px 25px;
-  border-radius: 8px;
-  font-weight: bold;
-  position: relative;
+  @apply text-[#84a3c9] inline-block no-underline px-[25px] py-[14px] rounded-lg font-bold relative;
 }
 
 .tarjeta-perfil {
-  display: grid;
-  grid-template-rows: auto 1fr;
-  max-width: 90%;
-  background: #1e293b;
-  border: 1px solid #334155;
-  padding: 35px;
-  border-radius: 18px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+  @apply grid grid-rows-[auto_1fr] max-w-[90%] bg-slate-800 border border-slate-700 p-[35px] rounded-[18px] text-center shadow-[0_10px_30px_rgba(0,0,0,.3)];
 }
 
 .tarjeta-perfil h3 {
-  color: white;
-  margin-bottom: 20px;
-  font-size: 26px;
+  @apply text-white mb-5 text-[26px];
 }
 
 .tarjeta-perfil p {
-  background: #0f172a;
-  margin: 10px 0;
-  padding: 12px;
-  border-radius: 8px;
-  color: #cbd5e1;
+  @apply bg-slate-900 my-[10px] mx-0 p-3 rounded-lg text-slate-300;
 }
 
 .seccion {
-  padding: 80px 0;
+  @apply py-20;
 }
 
 .seccion h2 {
-  font-size: 35px;
-  color: white;
-  margin-bottom: 25px;
-  border-left: 5px solid #38bdf8;
-  padding-left: 15px;
+  @apply text-[35px] text-white mb-[25px] border-l-[5px] border-sky-400 pl-[15px];
 }
 
 .seccion p {
-  color: #cbd5e1;
-  font-size: 18px;
-  line-height: 1.6;
+  @apply text-slate-300 text-[18px] leading-[1.6];
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  @apply grid grid-cols-4 gap-5;
 }
 
 .card {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
-  border: 1px solid #334155;
-  font-weight: bold;
+  @apply bg-slate-800 p-[25px] rounded-xl text-center border border-slate-700 font-bold;
 }
 
 .proyectos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  @apply grid grid-cols-3 gap-[25px];
 }
 
 .proyecto {
-  background: #1e293b;
-  padding: 25px;
-  border-radius: 14px;
-  border: 1px solid #334155;
+  @apply bg-slate-800 p-[25px] rounded-[14px] border border-slate-700;
 }
 
 .proyecto h3 {
-  color: #38bdf8;
-  margin-bottom: 15px;
+  @apply text-sky-400 mb-[15px];
 }
 
 @media (max-width: 768px) {
   .inicio {
-    grid-template-columns: 1fr;
-    padding: 60px 0;
+    @apply grid-cols-1 py-[60px];
   }
 
   .texto-inicio h1 {
-    font-size: 38px;
+    @apply text-[38px];
   }
 
   .texto-inicio h2 {
-    font-size: 22px;
+    @apply text-[22px];
   }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr);
+    @apply grid-cols-2;
   }
 
   .proyectos {
-    grid-template-columns: 1fr;
+    @apply grid-cols-1;
   }
 
   .botones {
-    flex-direction: column;
+    @apply flex-col;
   }
 }
 
 @media (max-width: 480px) {
   .grid {
-    grid-template-columns: 1fr;
+    @apply grid-cols-1;
   }
 
   .texto-inicio h1 {
-    font-size: 32px;
+    @apply text-[32px];
   }
 }

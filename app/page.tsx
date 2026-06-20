@@ -1,4 +1,5 @@
 import Footer from "./components/footer";
+import Proyectos from "./components/proyectos";
 
 export default function Home() {
   return (
@@ -57,31 +58,7 @@ export default function Home() {
 
       <section data-aos="fade-up" className="seccion" id="proyectos">
         <h2>Proyectos</h2>
-        <div className="proyectos">
-          <div className="proyecto">
-            <h3>Sistema de Facturación</h3>
-            <p>
-              Sistema para registrar ventas, generar boletas o facturas y
-              controlar el stock de productos.
-            </p>
-          </div>
-
-          <div className="proyecto">
-            <h3>Base de Datos MongoDB</h3>
-            <p>
-              Proyecto de gestión de devoluciones usando colecciones, usuarios,
-              productos, ventas y consultas en MongoDB.
-            </p>
-          </div>
-
-          <div className="proyecto">
-            <h3>Portafolio Web</h3>
-            <p>
-              Página personal desarrollada con Next.js para mostrar información,
-              habilidades y proyectos académicos.
-            </p>
-          </div>
-        </div>
+        <Proyectos />
       </section>
 
       <section data-aos="fade-up" className="seccion" id="contacto">
