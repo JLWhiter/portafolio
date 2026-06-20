@@ -1,23 +1,8 @@
 @import "tailwindcss";
 
-* {
-  @apply box-border m-0 p-0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   @apply font-sans bg-slate-900 text-gray-200;
-}
-
-.contenedor {
-  @apply w-[90%] max-w-[1100px] m-auto;
-}
-
-.inicio {
-  @apply min-h-screen grid grid-cols-[2fr_1fr] items-center gap-10;
 }
 
 .saludo {
