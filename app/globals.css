@@ -2,23 +2,11 @@
 
 
 body {
-  @apply font-sans bg-slate-900 text-gray-200;
+  @apply font-sans bg-amber-50 text-black ; 
 }
 
 .saludo {
   @apply text-sky-400 text-[20px] mb-[10px];
-}
-
-.texto-inicio h1 {
-  @apply text-[55px] text-white mb-[10px];
-}
-
-.texto-inicio h2 {
-  @apply text-[28px] text-sky-400 mb-5;
-}
-
-.texto-inicio p {
-  @apply text-[18px] leading-[1.6] text-slate-300;
 }
 
 .botones {
@@ -27,19 +15,7 @@ body {
 
 .boton-principal,
 .boton-secundario {
-  @apply text-[#84a3c9] inline-block no-underline px-[25px] py-[14px] rounded-lg font-bold relative;
-}
-
-.tarjeta-perfil {
-  @apply grid grid-rows-[auto_1fr] max-w-[90%] bg-slate-800 border border-slate-700 p-[35px] rounded-[18px] text-center shadow-[0_10px_30px_rgba(0,0,0,.3)];
-}
-
-.tarjeta-perfil h3 {
-  @apply text-white mb-5 text-[26px];
-}
-
-.tarjeta-perfil p {
-  @apply bg-slate-900 my-[10px] mx-0 p-3 rounded-lg text-slate-300;
+  @apply text-[#000000] inline-block no-underline px-[25px] py-[14px] rounded-lg font-bold relative;  
 }
 
 .seccion {
@@ -47,11 +23,11 @@ body {
 }
 
 .seccion h2 {
-  @apply text-[35px] text-white mb-[25px] border-l-[5px] border-sky-400 pl-[15px];
+  @apply text-[35px] text-black mb-[25px] border-l-[5px] border-sky-400 pl-[15px];
 }
 
 .seccion p {
-  @apply text-slate-300 text-[18px] leading-[1.6];
+  @apply text-black text-[18px] leading-[1.6];
 }
 
 .grid {
