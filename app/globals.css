@@ -1,21 +1,11 @@
 @import "tailwindcss";
 
-
-body {
-  @apply font-sans bg-amber-50 text-black ; 
-}
-
 .saludo {
   @apply text-sky-400 text-[20px] mb-[10px];
 }
-
-.botones {
-  @apply mt-[30px] flex gap-[15px] flex-wrap;
-}
-
 .boton-principal,
 .boton-secundario {
-  @apply text-[#000000] inline-block no-underline px-[25px] py-[14px] rounded-lg font-bold relative;  
+  @apply text-[#000000] inline-block no-underline px-[10px] py-[14px] rounded-lg font-bold relative w-40;  
 }
 
 .seccion {

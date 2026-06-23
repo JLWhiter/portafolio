@@ -3,9 +3,13 @@ import { LinkedIn, GitHub } from "@deemlol/next-icons";
 export default function Footer() {
   return (
     <footer
-      className="relative flex w-full bg-gray-900 text-white 
-      items-center justify-center text-center top-[-20px] p-8 gap-12"
+      className="relative flex w-[98%] text-black 
+      h-5 rounded-xl
+      items-center justify-center text-center gap-12
+      top-[-50px]
+      "
     >
+
       <p>
         © 2024 José Luis Chamorro Baldera. Todos los derechos reservados.
       </p>

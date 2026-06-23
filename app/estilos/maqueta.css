@@ -1,30 +1,30 @@
 body {
-  width: 100%;
-  min-height: 100vh;
+  display: flex;
+  margin: 0;
 }
 
 .contenedor {
   display: grid;
+  background-color: rgb(202, 202, 202);
   grid-template-areas:
     "inside content"
-    "footer footer";
+    "inside footer";
   grid-template-columns: 250px 1fr;
   grid-template-rows: auto auto;
-  gap: 20px;
   width: 100%;
-  min-height: 100vh;
 }
 
 .inside {
   grid-area: inside;
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+
 }
 
 .content {
   grid-area: content;
-  padding-right: 20px;
+  padding-right: 25px;
+  overflow-y: hidden;
 }
 
 .footer {
@@ -43,8 +43,10 @@ body {
   .inside {
     display: none;
     width: 100% !important;
-    min-height: auto;
+    height: 100% !important;
     position: relative;
+    box-sizing: border-box;
+    white-space: nowrap;
   }
 
   .content {
