@@ -2,7 +2,7 @@ import Proyectos from "../components/Proyectos"
 
 export default function Contenido() {
     return (
-        <div className="Contenido bg-[#ffffff] rounded-xl p-8">
+        <div className="content bg-[#ffffff] rounded-xl p-8">
             <section className="seccion" id="sobre-mi">
                 <h2>Sobre mí</h2>
                 <p>

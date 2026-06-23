@@ -1,6 +1,9 @@
 body {
+
   display: flex;
   margin: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .contenedor {
@@ -10,25 +13,29 @@ body {
     "inside content"
     "inside footer";
   grid-template-columns: 250px 1fr;
-  grid-template-rows: auto auto;
+  grid-template-rows: 1fr auto;
   width: 100%;
+  min-height: 100vh;
+  padding: 1em;
+  gap: 1em;
+  box-sizing: border-box;
 }
 
 .inside {
   grid-area: inside;
-  box-sizing: border-box;
-  white-space: nowrap;
-
+  display: grid;
 }
 
 .content {
   grid-area: content;
   padding-right: 25px;
-  overflow-y: hidden;
+  min-width: 0;
+  overflow-y: scroll;
 }
 
 .footer {
   grid-area: footer;
+  min-width: 0;
 }
 
 @media (max-width: 768px) {
@@ -38,18 +45,19 @@ body {
       "content"
       "footer";
     grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
   }
 
   .inside {
     display: none;
-    width: 100% !important;
-    height: 100% !important;
+    width: 100%;
+    height: auto;
     position: relative;
-    box-sizing: border-box;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .content {
     padding: 0 20px;
+    min-width: 0;
   }
 }

@@ -3,10 +3,9 @@ import { LinkedIn, GitHub } from "@deemlol/next-icons";
 export default function Footer() {
   return (
     <footer
-      className="relative flex w-[98%] text-black 
+      className="footer relative flex w-[98%] text-black 
       h-5 rounded-xl
       items-center justify-center text-center gap-12
-      top-[-50px]
       "
     >
 

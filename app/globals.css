@@ -1,7 +1,33 @@
 @import "tailwindcss";
 
-.saludo {
-  @apply text-sky-400 text-[20px] mb-[10px];
+
+.botones {
+  @apply mt-6;
+}
+
+.botones ul {
+  @apply flex flex-col gap-4 w-full;
+}
+
+.botones li {
+  @apply w-full;
+}
+
+.boton-principal,
+.boton-secundario {
+  @apply inline-flex items-center justify-center gap-2 w-fit max-w-full px-6 py-3 rounded-lg cursor-pointer font-bold;
+}
+
+#contenedor_dark {
+  @apply flex items-center gap-2;
+}
+.boton-principal,
+.boton-secundario {
+  @apply inline-flex items-center justify-center px-[24px] py-[12px] rounded-lg cursor-pointer;
+}
+
+#contenedor_dark {
+  @apply flex items-center;
 }
 .boton-principal,
 .boton-secundario {
