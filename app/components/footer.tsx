@@ -10,7 +10,7 @@ export default function Footer() {
     >
 
       <p>
-        © 2024 José Luis Chamorro Baldera. Todos los derechos reservados.
+        © 2026 José Luis Chamorro Baldera. Todos los derechos reservados.
       </p>
 
       <div className="redes-sociales flex justify-center gap-4">
