@@ -1,6 +1,6 @@
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import Contenido from "./data/contenido";
-import Panel from "./components/Panel";
+import Panel from "./components/panel";
 
 export default function Home() {
   return (

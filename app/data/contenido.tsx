@@ -1,4 +1,4 @@
-import Proyectos from "../components/Proyectos";
+import Proyectos from "../components/proyectos";
 
 export default function Contenido() {
   return (
